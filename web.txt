@@ -1,4 +1,4 @@
-doctype tells html documents.
+doctype tells html documents. nice
 it must have opening n closing tag.for eg:<html lang="en"> so here this lang ="en" is an attribute
 which tells us that language is english and then again this html tag should be closed with </html>.
 it should also contains head n body.
