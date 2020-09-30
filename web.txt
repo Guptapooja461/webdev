@@ -1,0 +1,667 @@
+doctype tells html documents.
+it must have opening n closing tag.for eg:<html lang="en"> so here this lang ="en" is an attribute
+which tells us that language is english and then again this html tag should be closed with </html>.
+it should also contains head n body.
+inside head it should contains meta body for eg:
+<head>
+<meta ....>so this meta tells us some information abt other documents.
+inside head it also contains <tittle>....</tittle>
+after this only </head> is closed.suppose if we want to link other css or js file then we have to link 
+within head which are called external sheets.
+then comes body<body> inside this we can write anything which is displayed on the web page.then</body>is closed
+and at last </html> is closed.
+for writing comments we use<!--writre here-->
+shortcut for writing comments type anything then do ctrl+/ 
+meta tag is mainly used for seo ie search engine orgainzation so it helps to access the website.
+in meta tag we can write:
+<meta name="description" content="this is description">//so here we can give the description of our page.
+<meta name="keywords" content="html,.....">
+<meta name="robots"  content="NOINDEX,NOFOLLOW">//if we give this then nobody is allowed to index or follow our source or link 
+given in website.but it should usually be content="INDEX,FOLLOW"..
+
+
+LINK SHOULD ALWAYS BE DONE AFTER TITLE.
+HOW TO LINK CSS IN HTML?
+ 
+->   <link rel="stylesheets" href="filename.css">
+
+FOR INCLUDING JAVA FILE IN HTML
+->   
+<script src="filename.js"></script>
+
+*heading n paragraphs:
+heading strts from h1 to h6 .here h1 is the largest or biggest heading.
+
+<h1>pooja</h1>
+
+
+paragraph:
+for inserting paragraph we can use this:
+<p>this is pooja</p>
+
+
+for inserting how many words u need to insert for that we can use:
+<p>Lorem(size)</p>(we can insert no of words by using emmet)
+-->lorem is used for dummy text so it provides no of wrds reqd.
+
+for inserting no paragraphs we use:
+p*(no.)
+eg:p*4(so it gives 4 paragraph)
+
+
+some more tags in html:
+1.<strong>this is strong</strong>(this basically make the sentences strong i.e bold.)
+2.<em>this is emphasized</em>(this basically makes the sentences more emphasized i.e. it differentiate it from others sentences).
+3.for breaking the line or getting new line we use:<br> this is a self closing tag.
+4.for horizontal line or rule we use <hr> tag (this provides horizontal line)it is also self closing tag.
+5.for making bold letter we use b tag i.e.(<b>this is bold</b>)and for italic we use i tag(<i>italic</i>)
+but this not good practice of using it.we should use <strong> for making bold and for making italic we use <em>.
+
+
+
+note:for jumping into a new line we can use ctrl+enter.
+
+
+
+*for adding links of any website we use:
+<a href="https://google.com">Go to google</a>
+so this a tag is nothing but anchor tag so this tag links with any website whether it is external or internal links.so no for displaying 
+information making for user to know easily we give description that is (go to this link name).
+
+by using this it will always open in the same tab if we use multiple links so again n agian u have to go back n close the previous site.
+inorder to get rid of this or for using dispalying new website or links in new tab we use:
+<a href="https://goggle.com" target="_blank">go to google</a>
+so target is the attribute which helps us to open the websites in new tab.
+
+for adding internal links:
+<a href="/filename" target="_blank">go to file</a>
+
+for adding images:
+<img src="image path" alt="write anything realted to img">
+we can define width and height of the image by using :
+(<img src="image path" alt="write anything realted to img" width="200" height="400">
+
+
+*for creating list and tables:
+
+there are two types of list in html:
+ol:ordered list(in this the list is created in ordered for eg:1,2,3...or a,b,c...orA,B...or in roman number)
+syntax:<ol>
+<li>this is first list</li>
+<li> this is second list</li>
+</ol>
+
+
+for creating wat type of it should display we use:
+<ol type="1">
+<li>anything</li>
+</ol>
+
+
+ul:unordered list(in this the list is created in inordered for eg:circle,square,disc)
+syntax:<ul>
+<li>this is the first list</li>
+<li>this is the second list</li>
+</ul>
+
+
+for creating wat type of it should display we use:
+<ul type="disc">
+<li>anything</li>
+</ul>
+
+
+*note:we can create list inside list(which is called nest)
+
+
+#for creating tables:
+syntax:
+<table>html table is defined with table tag.inside table tag it contains <thead> and <tbody>
+in <thead> it contains <th> and <tr> ...and inside <tbody> it contains <td> and<tr>.
+each table is defined with <tr> tag.A table header is defined with <th>tag.
+by defaults,table headings are bold and centered.
+a table data/cell is defined with the <td> tag.
+
+
+
+
+*forms and input:
+
+for creating forms we use <form> tag in this form tag we must have to give backend from where it is going to be connected 
+i.e <form action="backend.php">
+now inside form we can use <input> tag:i.e.name:<input type="text" name="myname">(so this create one box named name
+which will be text format n whenerver we submit it it will be submitted to our backend where it has written myname.)
+
+similarly:for eamil we use:
+reamil:<input type="email" name="myemail">
+for submit button we use:
+<input type="submit" value="submit now">
+
+note:we use <br< tag for breaking the line bt it is not good use of doing that so we must use <div> tag ..</div>
+
+for date:  date:<input type="date" name="mydate">(it displays all the dates from where we can select)
+for number: eg:
+bage: <input type="number" name="myage">
+
+*for creating a checkbox:
+we use:  any statement:<input type="checkbox" name="anything related to statement">
+eg: Are u eligible?:<input type="checkbox" name="myeligiblility">
+
+
+*for creating a radiobutton:
+we use: eg:
+gender: Male <input type="radio" name="mygender"> female <input type="radio" name="mygender">
+
+
+note:for moving anyline to other just use :Alt+downarrow key
+
+*for reseting the form we uuse:
+reset:<input type="reset" name="reset now">
+
+
+*for writing a paragraph we use text area:
+
+write about yourself: <textarea name="mytext" cols="size anynumber" rows=".."></textarea>(here cols used for column
+and rows stands for row)
+
+
+*label tag:
+by using label tag we can select that perticular thing for eg:(if we click on name then that name box will be selected)
+<label for="name">Name</label>(n then perform input tag)
+
+
+*select tag:
+it used to provide options
+<label for="car">car</label>
+<select name="mycar" id="car">
+<option value="ind">indica</option>
+<option value="swf">swift</option>
+</select>
+
+
+
+
+
+*Inline and block elements:
+
+
+paragraph is a block elements i.e <p> tag (it means it takes whole line as a paragraph)
+but inline elements doesnt take whole line as a paragraph eg:<span> this is a span</span>
+note:we can make block elements as inline by using css
+here li,ul,div,p is a block elemnts and em,img is a inline elements.
+
+
+*ids and classes:
+
+ids is only for single element if we define id for one elemnt it cannot be used for others element but classes can be used for multiple elements.
+inside classes we can define multiple properties such as:background color,border,etc
+
+syntax:for id and classes:
+<div id="mainbox" class="redBg blackBorder">
+this is mainbox
+</div>
+
+
+we can use same class in multiple elemnts:eg:
+<span class="redBg"></span>
+
+
+shortcuts:for creating class we use .(dot) i.e.(span.redBg(COLOR NAME) SO HERE it creates class of red background)
+for creating ids we use #(pounds) i.e.(span#mainspan(ids name) so here it creates ids of name mainspan)
+
+
+if we use div.redBg.blackBorder.anotherClass (so it automatically creates <div class="redBg blackBorder anotherClass"></div>
+if we use .blackBackground (so it automatically creates <div class="blackBackground"></div>)so here emmet takes div as default.
+
+
+
+*for creating similar elements using emmet:
+span.myclass.myclass2.myclass3 *4+<Tab>
+so here it creates 4 class of same elements.
+
+
+
+
+*HTML ENTITIES:
+html entities are used to display some reserved words in our server .(some reserved word or character are not displayed in server or not available in our keypad so for displaying it
+we use entities)
+some entities are:
+<>(for displaying left and right arrow)<p> paragraph is written like this &lt;p&gt;</p>(so this displays lyk this:paragraph is written like this <p>)
+for creating space between words we use &nbsp;(<p> this is another &nbsp; paragraph</p>(so this displays lyk this :this is another   paragraph)
+for pound currency we use &pound;(<p> pound is written lyk this &pound;</p>)
+or copyright symbol we use &copy;
+
+
+
+semantic tags:
+that introduces meaning to the web page rather than just presentation.
+
+<header>specifies a header for a document or section.The <header> element should be used as a container for introductory content.
+
+<div> and <span> is non-semantic elements i.e it tells nothing about its content.
+
+<nav>The <nav> element defines a set of navigation links.
+
+<article>specifies independent,self-contained content.
+
+<section> defines a section in a element.
+
+<aside>The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+The <aside> content should be related to the surrounding content.
+
+<footer>specifies a footer for a document or section.A <footer> element should contain information about its containing element.
+A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
+
+
+<figure>An image and a caption can be grouped together in a <figure> element.
+The purpose of a caption is to add a visual explanation to an image.
+
+
+
+
+
+
+
+
+Tag	Description
+<article>	Defines an article
+<aside>	Defines content aside from the page content
+<details>	Defines additional details that the user can view or hide
+<figcaption>	Defines a caption for a <figure> element
+<figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>	Defines a footer for a document or section
+<header>	Specifies a header for a document or section
+<main>	Specifies the main content of a document
+<mark>	Defines marked/highlighted text
+<nav>	Defines navigation links
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+
+
+
+
+
+*css :cascading style sheets
+
+css gives style to raw HTML
+css stands for Cascading style sheets.
+css is used to give style to our web pages.
+css is used to make websites responsive.
+html is used to structure a website
+css takes responsibility of design
+
+
+cascading style sheets which is known as css is a style sheet language that used to handle the presentation
+of the web page containing HTML.
+it makes our websites beautiful and modern looking.
+
+
+syntax:  selector  property  value
+           |         |        |
+           p  {     color:   blue;}
+
+for group of selectors:  header,p.intro{background-color:red;border-radius:3px;}
+
+
+
+=>three ways to add css to the markup:(markup is nothing but html code)
+1)inline css:css is added to the elemnts directly uing style attribute.
+syntax:<p style="color:red;background-color=yellow;">this tutorial will teach u everything you need to know about css/html</p>
+this is bad practice of writing inline css.
+
+2)internal css:css is kept inside the head tags in <style> tags
+syntax:<style>
+p{color:red;
+background-color:seagreen;}
+</style>
+
+
+3)external css:css is kept separately inside a .css style sheet.
+syntax:<link rel="stylesheet" href="tut13.css">(so create an new file tut13.css and then write coding in that css file.)
+inside tut13.css
+p{
+color:greenyellow;
+background-color:hotpink;}
+
+ 
+s1->write css in .css file
+s2->include that css file to markup.
+note:it gives more preferences to that which comes at last or is new(among internal or external)
+inorder to select according to our wish from external or internal we write:!important (inside code)
+
+
+
+
+*what is a css selector?
+css selector are used to find the element whose property will be set.
+selectors are used to target the html elements.
+selectors makes it easy for us to easily target single/multiple HTML elements in the markup.
+types of basic selectors:
+1.css element selector:<style>p{color:red;background-color=green;}</style>(this makes all pargraph as red with green background)
+
+2.css id selector:(so in order to give particular color to particular paragraph we use id)i.e:<p id="redelement">this is anther paragraph</p>
+now we use <style>#redelement{color:red;}</style>
+
+3.css class selector:(so in order to give particular color to particular paragraph we can use class also)i.e:<p id="redelement" class="firstpara redbg">this is anther paragraph</p>
+now we use <style>.redbg{color:red; background:green;}</style>
+
+4.the css grouping selector:<span>this is span</span>
+<footer>this is footer</footer>(for using same color in both we can group them)
+i.e  <style>footer,span{color:hotpink;}</style>
+
+
+*note:for commenting in css we use /*anything*/(shortcut ctrl+/)
+
+
+*for creating border we use:<style>p{border: 2px solid red;}</style>(so it creates border in every paragraph with red color)
+
+
+
+
+*DEVELOPER TOOLS:
+so here we can change the things according to our wish but it changed temporarily nt permanently.
+suppose i opened some server and there i want to change something lyk color,text fonts etc so i have to go to inspect then it will show me codes related to that server
+there in that server suppose i selected some thing to chnge so it directly takes me to that code line n from their i can chnge it.but if i reload it agian then it agains come to 
+its original state.some watspp message or email ss also can be chnged.
+
+
+
+*fonts:
+<style>
+p{
+font-family:(here we can choose any font type we want)so basically there are web safe fonts:which means that these all fonts family are available in our operating system
+and are safe to use.}</style>
+
+
+=>web fonts:so this fonts are nt available in our operating system.we have to import it from internet.the style sheeet link given can be copied n paste in our vs code and font family should also 
+be copied n paste in font-family.
+=>fonts stack:so here it gives multiple choice for operating system to select that is {arial,french style,italic birds}so among these all it will select which is available.    
+
+
+=>font-size:23px(so size is always given in pixel(pixel is 1/96th of 1 inch)
+=>line-height:2.3em;(so it gives the space betwn two fonts as we increase the height size the space will also be increased)
+=>font-weight:bold or anything
+=>font-style:italic or bold or anything
+
+
+
+
+*colors in css:
+three ways to define color in css-:(either we can define it by name,rgb(color-id),hex color
+color:blueviolet;
+color:rgb(223,130,54);
+color:#ffffff;
+
+
+
+
+*borders and background:
+#firstpara{
+background-color:rgb();
+height:100px;
+width:455px;
+/*border-width:4px;
+border-color:green;
+border-style:solid;*/for defining in one line=> boder:4px solid green;
+border-radius:11px;}
+
+
+now suppose i want to change the color or radius or anything individually then:
+#secondpara{
+background-color:rgb( );
+height:100px;
+width:455px;
+border-top:2px solid rgb();
+border-right:2px solid rgb();
+border-bottom:
+border-left:
+border-top-left-radius:4px;
+border-bottom-left-radius:24px;
+}
+
+
+#thirdpara{
+height:
+width:
+background-image:url('link');
+border:2px solid red;
+background-repeat:no repeat;/*reapeat- and reapeat-y will make it repeat on x and y axis*/
+background-position:122px top;
+background-position:centre centre;anything as u wish
+}
+
+
+
+
+*css box model,margin and padding:
+<style>
+.container{
+background-color:rgb();
+border:3px solid rgb();
+ padding:78px;
+for top,bottom,left,right:we can use individually or in same line=>
+padding-top:79px;
+padding-bottom:79px;
+padding-left:34px;
+padding-right:79px;
+
+for same line:
+padding=top right bottom left;
+i.e
+padding=23px 56px 6px 78px;
+
+ we can also write it as lyk this:
+padding:y(top/bottom) x(left/right);
+i.e
+padding:34px 19px;
+   
+
+
+similarly we can write for margin also:
+margin:14px 19px;
+
+note:first comes element outer box is padding the border and last is margin.
+
+}
+note:by using inspect we can change padding n margin size always bt inorder to stop it we use box sizing:
+i.e: box-sizing:border-box;
+
+
+
+*universal selector:so by using this we can use set it for all elements for eg:
+*{
+box-sizing:border box;
+padding:0;
+margin:0;
+}
+//so by default it makes padding n margin as 0 until we change it inside the code.
+
+
+
+
+*float,clear and alignment in html:
+
+The CSS float property specifies how an element should float.
+
+The float Property
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+In its simplest use, the float property can be used to wrap text around images.
+
+
+
+=>clear:The CSS clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear Property
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear property can have one of the following values:
+
+none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent
+The most common way to use the clear property is after you have used a float property on an element.
+
+When clearing floats, you should match the clear to the float: If an element is floated to the left,
+ then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+
+
+
+=>CSS Layout - Horizontal & Vertical Align
+
+
+1.)CSS Layout - Horizontal & Vertical Align=>To horizontally center a block element (like <div>), use margin: auto;
+2.)Center Align Text=>To just center the text inside an element, use text-align: center;
+3.)Center an Image=>To center an image, set left and right margin to auto and make it into a block element:
+   eg:img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+4.)Left and Right Align - Using position=>One method for aligning elements is to use position: absolute;
+5.)Left and Right Align - Using float=>eg:
+                                          .right {
+                                         float: right;
+                                         width: 300px;
+                                           border: 3px solid #73AD21;
+                                                padding: 10px;
+                                               }
+
+
+
+
+*some pseudo selector:
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus.
+
+
+
+=>this is for anchor class.
+1.)/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+2.)/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+
+3.)/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+
+4.)/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+
+5.)we can also use for btn class or any class.
+
+
+
+*navigation bar:
+used as nav tag.
+Navigation Bars
+Having easy-to-use navigation is important for any web site.
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+=>Navigation Bar = List of Links
+A navigation bar needs standard HTML as a base.
+
+In our examples we will build the navigation bar from a standard HTML list.
+
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+eg:<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>(and this can be styled using css)
+
+
+
+
+*display property in css:
+
+1.) inline:Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+
+2.)block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+
+3.)inline-block: Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+
+
+
+
+*position property:
+
+The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+
+CSS Syntax
+position: static|absolute|fixed|relative|sticky|initial|inherit;
+
+=>Property Values
+Value	Description	Play it
+static	Default value. Elements render in order, as they appear in the document flow	
+absolute	The element is positioned relative to its first positioned (not static) ancestor element	
+fixed	The element is positioned relative to the browser window	
+relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+sticky	The element is positioned based on the user's scroll position
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Note: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix.	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
